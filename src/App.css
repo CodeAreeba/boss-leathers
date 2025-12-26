@@ -4,6 +4,7 @@
   --tertiory-color: #272727;
   --light-black: #232323;
   --text-color2: #FFFFFF;
+  --search-color:#ddd;
   --border-radius1: 25px;
   --border-radius2: 10px;
   --border-radius3: 5px;
@@ -18,6 +19,7 @@
   --heading-line-height: 1.2;
   --bold-font-weight: 600;
   --extra-bold-font-weight: 900;
+  --overlay-color: 31, 41, 55;
 }
 * {
   padding: 0;

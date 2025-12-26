@@ -1,7 +1,7 @@
 .search-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(var(--overlay-color), 0.6);
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 .search-overlay .search-container {
-  background: #fff;
+  background: var(--text-color2);
   width: 90%;
   max-width: 1440px;
   padding: 60px 80px;
@@ -45,7 +45,7 @@
   width: 100%;
   padding: 14px 50px 14px 18px;
   border-radius: 6px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--search-color);
 }
 
 .search-box .search-icon {
@@ -60,7 +60,7 @@
   text-align: center;
   font-size: 14px;
   margin: 18px 0 50px;
-  color: #555;
+  color: var(--light-black);
 }
 
 .quick-search span {
@@ -68,7 +68,7 @@
   cursor: pointer;
 }
 
-/* Popular Products */
+ 
 .popular-title {
   font-size: 18px;
   margin-bottom: 25px;
