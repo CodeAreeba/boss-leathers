@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './Footer/Footer';
 import NavBar from './Components/NavBar/NavBar';
 import CardsSection from './Components/CardsSection/CardsSection';
+import Sidebar from './Sidebar/Sidebar';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Footer />
       
        
+      <Sidebar />
+      {/* <Footer />  */}
     </div>
   );
 }
