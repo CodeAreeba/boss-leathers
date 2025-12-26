@@ -1,0 +1,12 @@
+.cards-section {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.cards-section .cards-container {
+  max-width: 1440px;
+  margin: 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

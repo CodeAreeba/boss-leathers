@@ -1,0 +1,124 @@
+.card {
+  position: relative;
+  width: 100%;
+  height: 706px;
+  overflow: hidden;
+}
+
+.card .card-image {
+  width: 100%;
+  height: 100% ;
+}
+
+.card .card-image img {
+  width: 1440px;
+  
+  object-fit: contain;
+  display: block;
+}
+
+/* Text overlay */
+.card .card-content {
+  position: absolute;
+  left: 50px;
+  bottom: 250px;
+  color: #fff;
+}
+
+.card .card-content h2 {
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.card .card-content button {
+    
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.card .card-content button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Large tablets */
+@media (max-width: 1200px) {
+  .card {
+    height: 600px;
+  }
+
+  .card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card .card-content h2 {
+    font-size: 56px;
+  }
+
+  .card .card-content {
+    bottom: 180px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .card {
+    height: 500px;
+  }
+
+  .card .card-content h2 {
+    font-size: 46px;
+  }
+
+  .card .card-content {
+    left: 40px;
+    bottom: 140px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .card {
+    height: 420px;
+  }
+
+  .card .card-content h2 {
+    font-size: 34px;
+  }
+
+  .card .card-content {
+    left: 24px;
+    bottom: 100px;
+  }
+
+  .card .card-content button {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .card {
+    height: 340px;
+  }
+
+  .card .card-content h2 {
+    font-size: 26px;
+  }
+
+  .card .card-content {
+    left: 16px;
+    bottom: 70px;
+  }
+}
