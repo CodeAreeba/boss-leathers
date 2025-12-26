@@ -20,12 +20,11 @@ const NavBar = () => {
   return (
     <>
       <section className="navbar">
-        {/* ===== TOP BAR ===== */}
         <div className="navbar-top">
           <div className="navbar-container">
             <div className="navbar-top-left">
-              <span><img src={phoneIcon} alt="" /> +92 300 123 4567</span>
-              <span><img src={emailIcon} alt="" /> info@bossleathers.com</span>
+              <span><img className="phone-icon" src={phoneIcon} alt="" /> +92 300 123 4567</span>
+              <span><img className="email-icon" src={emailIcon} alt="" /> info@bossleathers.com</span>
             </div>
 
             <div className="navbar-top-right">
@@ -37,7 +36,6 @@ const NavBar = () => {
           </div>
         </div>
 
-        {/* ===== MAIN BAR ===== */}
         <div className="navbar-main">
           <div className="navbar-container">
             <div className="navbar-menu">
@@ -63,7 +61,6 @@ const NavBar = () => {
         </div>
       </section>
 
-      {/* Search Overlay - Conditionally Rendered */}
       {isSearchOpen && <SearchOverlay onClose={() => setIsSearchOpen(false)} />}
     </>
   );
