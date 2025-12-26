@@ -1,7 +1,7 @@
-/* ===== ROOT SECTION ===== */
+
 .navbar {
   width: 100%;
-  background-color: #fff;
+  background-color: var(--text-color2);
   margin-top: 15px;
   font-family: "Segoe UI", sans-serif;
 }
@@ -41,21 +41,21 @@
   border-radius: 20px;
   border: 1px solid var(--secondary-color);
   outline: none;
-  background: #fff;
+  background: var(--text-color2);
   cursor: pointer;
   text-align: left;
-  color: #999;
+  color: var(--search-color);
   font-size: 14px;
   font-family: "Segoe UI", sans-serif;
   transition: border-color 0.2s ease;
 }
 
 .navbar .navbar-top .navbar-top-right button:hover {
-  border-color: #333;
+  border-color: var(--secondary-color);
 }
 
 .navbar .navbar-top .navbar-top-right button span{
-    color: black;
+    color: var(--secondary-color);
     margin-right: 10px;
 }
  
