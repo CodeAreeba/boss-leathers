@@ -1,7 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Cards.css";
 
 const Cards = ({ image, title, buttonText }) => {
+  const navigate = useNavigate();
+
+  const handleExplore = () => {
+    
+    const categorySlug = title.toLowerCase().replace(/\s+/g, '-');
+    navigate(`/categories/${categorySlug}`);
+  };
+
   return (
     <div className="card">
       <div className="card-image">
@@ -10,7 +19,7 @@ const Cards = ({ image, title, buttonText }) => {
 
       <div className="card-content">
         <h2>{title}</h2>
-        <button>{buttonText}</button>
+        <button onClick={handleExplore}>{buttonText}</button>
       </div>
     </div>
   );
