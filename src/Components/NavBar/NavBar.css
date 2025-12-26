@@ -34,15 +34,30 @@
     width: 20px;
     height: 21px;
 }
-.navbar .navbar-top .navbar-top-right input {
+.navbar .navbar-top .navbar-top-right button {
     width: 458px;
-    height: 34;
+    height: 34px;
   padding: 6px 14px;
   border-radius: 20px;
   border: 1px solid var(--secondary-color);
   outline: none;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  color: #999;
+  font-size: 14px;
+  font-family: "Segoe UI", sans-serif;
+  transition: border-color 0.2s ease;
 }
 
+.navbar .navbar-top .navbar-top-right button:hover {
+  border-color: #333;
+}
+
+.navbar .navbar-top .navbar-top-right button span{
+    color: black;
+    margin-right: 10px;
+}
  
 .navbar .navbar-main {
   padding: 14px 0;
