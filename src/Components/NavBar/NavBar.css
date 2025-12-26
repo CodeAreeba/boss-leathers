@@ -2,11 +2,10 @@
 .navbar {
   width: 100%;
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Segoe UI", sans-serif;
 }
 
-/* ===== REUSABLE CONTAINER ===== */
 .navbar .navbar-container {
   max-width: 1440px;
   margin: 0 auto;
@@ -17,15 +16,20 @@
   
 }
 
- 
-
 .navbar .navbar-top .navbar-top-left {
   display: flex;
   gap: 20px;
   font-size: 14px;
   color: var(--secondary-color);
 }
-
+.navbar .navbar-top .navbar-top-left .email-icon{
+    width: 18px;
+    height: 14px;
+}
+.navbar .navbar-top .navbar-top-left .phone-icon{
+    width: 18px;
+    height: 18px;
+}
 .navbar .navbar-top .navbar-top-left span img{
     width: 20px;
     height: 21px;
@@ -50,7 +54,6 @@
 }
 
 .navbar .navbar-main .navbar-logo {
-  
   left: 50%;
   transform: translateX(-50%);
 }
@@ -60,9 +63,7 @@
   width: 140px;
   
 }
- 
 
-/* Cart */
 .navbar .navbar-main .navbar-cart {
   position: relative;
   font-size: 22px;

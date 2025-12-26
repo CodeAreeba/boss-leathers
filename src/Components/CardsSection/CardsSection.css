@@ -5,7 +5,7 @@
 
 .cards-section .cards-container {
   max-width: 1440px;
-  margin: 0 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 10px;

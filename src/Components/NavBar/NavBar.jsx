@@ -5,16 +5,23 @@ import emailIcon from '../../Assets/emailIcon.png';
 import bossLogo from '../../Assets/logo.png';
 import cart from '../../Assets/Cart.png';
 import menu from '../../Assets/menuIcon.png';
+import { useState } from "react";
+import Sidebar from "../Sidebar/Sidebar";
 
 const NavBar = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
   return (
     <section className="navbar">
-      {/* ===== TOP BAR ===== */}
       <div className="navbar-top">
         <div className="navbar-container">
           <div className="navbar-top-left">
-            <span><img src={phoneIcon} alt="" /> +92 300 123 4567</span>
-            <span><img src={emailIcon} alt="" /> info@bossleathers.com</span>
+            <span><img className="phone-icon"src={phoneIcon} alt="" /> +92 300 123 4567</span>
+            <span><img className="email-icon"src={emailIcon} alt="" /> info@bossleathers.com</span>
           </div>
 
           <div className="navbar-top-right">
@@ -23,10 +30,11 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* ===== MAIN BAR ===== */}
       <div className="navbar-main">
         <div className="navbar-container">
-          <div className="navbar-menu"><img src={menu} alt="" /></div>
+          <div className="navbar-menu"><img src={menu} alt="" onClick={toggleSidebar} 
+        style={{ cursor: "pointer" }} /></div>
+        <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
 
           <span className="navbar-logo">
             <img src={bossLogo} alt="Boss Leathers" />

@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Footer from './Footer/Footer';
+import Footer from './Components/Footer/Footer';
 import NavBar from './Components/NavBar/NavBar';
 import CardsSection from './Components/CardsSection/CardsSection';
-import Sidebar from './Sidebar/Sidebar';
+// import Sidebar from './Components/Sidebar/Sidebar';
 
 function App() {
   return (
@@ -11,10 +11,6 @@ function App() {
       <NavBar />
       <CardsSection />
       <Footer />
-      
-       
-      <Sidebar />
-      {/* <Footer />  */}
     </div>
   );
 }
