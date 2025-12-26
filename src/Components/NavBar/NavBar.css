@@ -1,0 +1,84 @@
+/* ===== ROOT SECTION ===== */
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== REUSABLE CONTAINER ===== */
+.navbar .navbar-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+ 
+
+.navbar .navbar-top .navbar-top-left {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.navbar .navbar-top .navbar-top-left span img{
+    width: 20px;
+    height: 21px;
+}
+.navbar .navbar-top .navbar-top-right input {
+    width: 458px;
+    height: 34;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid black;
+  outline: none;
+}
+
+ 
+.navbar .navbar-main {
+  padding: 14px 0;
+}
+
+.navbar .navbar-main .navbar-menu {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.navbar .navbar-main .navbar-logo {
+  
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar .navbar-main .navbar-logo img {
+  height: 55px;
+  width: 140px;
+  
+}
+ 
+
+/* Cart */
+.navbar .navbar-main .navbar-cart {
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+}
+.navbar .navbar-main .navbar-cart img{
+    width: 33px;
+    height: 33px;
+}
+.navbar .navbar-main .navbar-cart .cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #000;
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
