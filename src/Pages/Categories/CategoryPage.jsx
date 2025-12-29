@@ -5,8 +5,7 @@ import ShoesSection from '../../Components/Shoes/ShoeSection';
 
 const CategoryPage = () => {
   const { categoryName } = useParams();
-  
-  // Convert URL slug to display format (e.g., "new-arrivals" → "New Arrivals")
+
   const displayName = categoryName
     .split('-')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))

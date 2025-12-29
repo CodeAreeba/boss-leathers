@@ -1,0 +1,33 @@
+.shipping-policy {
+  width: 1440px;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--light-black);
+}
+
+.shipping-title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+}
+
+.shipping-content {
+  width: 1440px;
+  margin-left: 100px;
+}
+
+.shipping-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.shipping-content .underline {
+  text-decoration: underline;
+  font-weight: 500;
+  margin-top: 15px;
+}

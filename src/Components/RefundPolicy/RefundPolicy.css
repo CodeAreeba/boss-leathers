@@ -1,0 +1,32 @@
+.refund-policy {
+  width: 1440px;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--light-black);
+}
+
+.refund-title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: var(--secondary-color);
+}
+
+.policy-section {
+  margin-bottom: 25px;
+}
+
+.policy-section h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+}
+
+.policy-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 2px 0;
+}
