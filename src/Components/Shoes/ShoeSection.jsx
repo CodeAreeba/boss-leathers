@@ -92,7 +92,7 @@ const ShoesSection = () => {
         <div className={`products ${layout}`}>
           {shoesData.map((shoe) => (
             <div className="product-card" key={shoe.id}>
-              <div className="product-image">
+              <div className="product-images">
                 <img src={shoe.image} alt="" />
               </div>
               <h4>{shoe.name}</h4>

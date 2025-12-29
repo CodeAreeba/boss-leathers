@@ -12,25 +12,25 @@ const PeopleAlsoBought = () => {
       </p>
 
       <div className="product-grid">
-        <div className="product-card">
+        <div className="product-cards">
           <div className="product-images"><img src={shoe} alt="" /></div>
           <p className="product-name">Derby - 210 BRN</p>
           <p className="product-price">Rs.28,500.00</p>
         </div>
 
-        <div className="product-card">
+        <div className="product-cards">
           <div className="product-images"><img src={shoe} alt="" /></div>
           <p className="product-name">Derby - 536P BLU</p>
           <p className="product-price">Rs.28,500.00</p>
         </div>
 
-        <div className="product-card">
+        <div className="product-cards">
           <div className="product-images"><img src={shoe} alt="" /></div>
           <p className="product-name">Derby - 536 PT BLK</p>
           <p className="product-price">Rs.28,500.00</p>
         </div>
 
-        <div className="product-card">
+        <div className="product-cards">
           <div className="product-images"><img src={shoe} alt="" /></div>
           <p className="product-name">Derby - 210-SOOTI BRN</p>
           <p className="product-price">Rs.28,500.00</p>
