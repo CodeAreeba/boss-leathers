@@ -1,0 +1,16 @@
+.product-section,
+.product-bottom-section {
+  width: 100%;
+  background: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 40px 60px;
+}
+
+.product-layout {
+  display: flex;
+  gap: 60px;
+}

@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+ 
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from './MainLayout/MainLayout';
 import Home from './Pages/Home/Home';
 import CategoryPage from './Pages/Categories/CategoryPage';
+import ProductPage from './Pages/Product/ProductPage';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/categories/:categoryName" element={<CategoryPage />} />
-          
+           <Route path="/productDetails" element={<ProductPage />} />      
         </Route>
       </Routes>
     </BrowserRouter>

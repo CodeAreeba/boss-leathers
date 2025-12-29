@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Categories from '../../Components/Categories/Categories';
+import ShoesSection from '../../Components/Shoes/ShoeSection';
 
 const CategoryPage = () => {
   const { categoryName } = useParams();
@@ -14,6 +15,7 @@ const CategoryPage = () => {
   return (
     <div>
       <Categories categoryName={displayName} />
+      <ShoesSection />
     </div>
   );
 };

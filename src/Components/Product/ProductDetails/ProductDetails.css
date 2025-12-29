@@ -1,0 +1,33 @@
+.product-details {
+  
+  border-top: 1px solid  #c6c5c5;
+  padding-top: 40px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.tabs button {
+  padding: 12px 20px;
+  border: none;
+  background: #eee;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.tabs .active {
+  background: #3b1f0f;
+  color: #fff;
+}
+
+.description-content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.description-content p i{
+    font-weight:400;
+}

@@ -1,0 +1,23 @@
+.product-gallery {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+}
+
+.thumbnail-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.thumb {
+  width: 70px;
+  height: 70px;
+  background: #e5e5e5;
+}
+
+.main-image {
+  flex: 1;
+  height: 450px;
+  background: #f2f2f2;
+}

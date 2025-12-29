@@ -1,0 +1,124 @@
+.shoes-section {
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.shoes-section__container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* ===== Toolbar ===== */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* LEFT */
+.toolbar__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.result-count {
+  font-size: 14px;
+  color: #555;
+}
+
+/* RIGHT */
+.toolbar__right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Layout Icons */
+.layout-switch button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin: 0 4px;
+  color: #bbb;
+  cursor: pointer;
+}
+
+.layout-switch .active {
+  color: #000;
+}
+
+/* Sort */
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.sort-select {
+  position: relative;
+}
+
+.sort-select select {
+  border: none;
+  padding: 6px 26px 6px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.sort-select svg {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* ===== Products ===== */
+.products {
+  display: grid;
+  gap: 30px;
+}
+
+/* Layouts */
+.products.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.products.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.products.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.products.list {
+  grid-template-columns: 1fr;
+}
+
+/* Card */
+.product-card {
+  text-align: center;
+}
+
+.product-image {
+  height: 180px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
