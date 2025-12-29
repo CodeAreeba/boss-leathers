@@ -14,7 +14,7 @@ const ProductInfo = () => {
   const decreaseQty = () => quantity > 1 && setQuantity(quantity - 1);
 
   return (
-    <div className="product-info">
+    <div className="product-infos">
 
       <h1 className="product-title">DERBY – 536P BRN</h1>
 
@@ -66,14 +66,14 @@ const ProductInfo = () => {
       </div>
 
       {/* QUANTITY + CART */}
-      <div className="cart-row">
+      <div className="cart-rows">
         <div className="quantity-box">
           <button onClick={decreaseQty}>−</button>
           <span>{quantity}</span>
           <button onClick={increaseQty}>+</button>
         </div>
 
-        <button className="add-cart">ADD TO CART</button>
+        <button className="add-carts">ADD TO CART</button>
 
         <button className="wishlist">
           <FaHeart />

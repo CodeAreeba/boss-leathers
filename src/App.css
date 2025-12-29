@@ -1,10 +1,14 @@
 :root {
-  --primary-color: #0083BC;
+  --primary-color: #3b1f0f;
   --secondary-color: #000000;
   --tertiory-color: #272727;
   --light-black: #232323;
   --text-color2: #FFFFFF;
   --search-color:#ddd;
+  --border-color:#c6c5c5;
+  --brown-color:#8b7355;
+  --tan-color:#c37a4a;
+  --dark-gray:#6e6969;
   --border-radius1: 25px;
   --border-radius2: 10px;
   --border-radius3: 5px;

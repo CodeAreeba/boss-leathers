@@ -1,7 +1,9 @@
 .product-details {
   
-  border-top: 1px solid  #c6c5c5;
+  border-top: 1px solid  var(--border-color);
   padding-top: 40px;
+  border-bottom: 1px solid  var(--border-color);
+  padding-bottom: 40px;
 }
 
 .tabs {
@@ -14,14 +16,14 @@
 .tabs button {
   padding: 12px 20px;
   border: none;
-  background: #eee;
+  background: var(--search-color);
   border-radius: 5px;
   font-weight: bold;
 }
 
 .tabs .active {
-  background: #3b1f0f;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color2);
 }
 
 .description-content p {

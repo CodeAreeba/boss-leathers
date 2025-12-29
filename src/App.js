@@ -9,7 +9,6 @@ import RefundPolicyPage from './Pages/RefundPolicy/RefundPolicy';
 import ShippingPolicyPage from './Pages/ShippingPolicy/ShippingPolicyPage';
 import CartPage from './Pages/Cart/CartPage';
 import CheckoutPage from './Pages/Checkout/CheckoutPage';
-import PeopleAlsoBought from './Components/PeopleAlsoBought/PeopleAlsoBought';
 import Cart from "./Components/CartItems/CartItems";
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
           <Route path="/shipping-policy" element={<ShippingPolicyPage />} />
           <Route path="/empty-cart" element={<CartPage />} />
           <Route path="/checkout-page" element={<CheckoutPage />} />
-          <Route path="/people-also-bought" element={<PeopleAlsoBought />} />
           <Route path="/cart-items" element={<Cart />} />
           
         </Route>
