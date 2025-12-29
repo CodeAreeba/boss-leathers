@@ -18,7 +18,7 @@
 
 .breadcrumb {
   font-size: 13px;
-  color: #777;
+  color: var(--dark-gray);
   margin-bottom: 25px;
 }
 
@@ -27,14 +27,14 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  border: 1px solid #ddd;
-  background: #fff;
+  border: 1px solid var(--border-color);
+  background: var(--text-color2);
   cursor: pointer;
   margin-bottom: 60px;
 }
 
 .continue-btn:hover {
-  background: #f5f5f5;
+  background: var(--search-color);
 }
 
 .account-title {
