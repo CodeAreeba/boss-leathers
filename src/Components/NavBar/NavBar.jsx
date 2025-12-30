@@ -36,7 +36,7 @@ const NavBar = () => {
             <div className="navbar-menu"><img src={menu} alt="" /></div>
 
             <span className="navbar-logo">
-              <img src={bossLogo} alt="Boss Leathers" />
+              <img src='./logo2.svg' alt="Boss Leathers" />
             </span>
 
             <div className="navbar-cart">
