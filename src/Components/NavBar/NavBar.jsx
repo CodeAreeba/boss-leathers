@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./NavBar.css";
 import phoneIcon from '../../Assets/phoneIcon.png';
 import emailIcon from '../../Assets/emailIcon.png';
-import bossLogo from '../../Assets/logo.png';
+
 import cart from '../../Assets/Cart.png';
 import menu from '../../Assets/menuIcon.png';
 import { FiSearch } from "react-icons/fi";
@@ -52,7 +52,7 @@ const NavBar = () => {
             <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
 
             <span className="navbar-logo">
-              <img src={bossLogo} alt="Boss Leathers" />
+              <img src="/logo2.svg" alt="Boss Leathers" />
             </span>
 
             <div className="navbar-cart">
