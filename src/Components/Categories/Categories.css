@@ -93,3 +93,72 @@
 .dot:hover {
   background-color: var(--light-black);
 }
+
+@media (max-width: 768px) {
+  .categories-section {
+    height: auto;
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+
+  .categories-container {
+    gap: 15px;
+  }
+
+  .category-card {
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+    gap: 10px;
+  }
+
+  .category-image {
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  .category-image:hover {
+    transform: translateY(-4px);
+  }
+
+  .category-title {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .categories-dots {
+    margin-top: 20px;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .dot.active {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-section {
+    margin: 30px auto;
+    padding: 0 10px;
+  }
+
+  .category-card {
+    width: 240px;
+    min-width: 240px;
+    max-width: 240px;
+  }
+
+  .category-image {
+    height: 180px;
+  }
+
+  .category-title {
+    font-size: 13px;
+  }
+}
