@@ -8,10 +8,12 @@ import menu from '../../Assets/menuIcon.png';
 import { FiSearch } from "react-icons/fi";
 import Sidebar from "../Sidebar/Sidebar";
 import SearchOverlay from '../SearchOverlay/SearchOverlay';
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -54,7 +56,7 @@ const NavBar = () => {
             </span>
 
             <div className="navbar-cart">
-              <img src={cart} alt="" />
+              <img src={cart} alt="" onClick={() => navigate("/empty-cart")}/>
               <span className="cart-count">0</span>
             </div>
           </div>

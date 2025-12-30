@@ -1,47 +1,57 @@
-.people-section {
-  width: 1440px;
-  padding: 80px 60px;
+.pab-section {
+  width: 100%;
+  padding: 80px 0 120px;
+  background: var(--text-color2);
   text-align: center;
-  background-color: #ffffff;
 }
 
-.people-title {
+.pab-title {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
-.people-subtitle {
+.pab-subtitle {
   font-size: 14px;
-  color: #777;
-  margin-bottom: 60px;
+  color: var(--dark-gray);
+  margin-bottom: 70px;
 }
 
-.product-grid {
+.pab-grid {
   display: flex;
   justify-content: center;
   gap: 60px;
+  flex-wrap: nowrap;
 }
 
-.product-cards {
+.pab-card {
   width: 220px;
   text-align: center;
 }
 
-.product-images {
+.pab-image {
   width: 100%;
-  height: 140px;
-  margin-bottom: 50px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.product-name {
+.pab-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pab-name {
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 6px;
+  margin-top: 18px;
 }
 
-.product-price {
+.pab-price {
   font-size: 14px;
   font-weight: 600;
+  margin-top: 6px;
 }

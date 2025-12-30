@@ -1,5 +1,5 @@
 .empty-cart {
-  width: 1440px;
+  max-width: 1440px;
   min-height: 70vh;
   display: flex;
   flex-direction: column;

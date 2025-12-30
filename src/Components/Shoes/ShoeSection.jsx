@@ -3,6 +3,8 @@ import "./ShoeSection.css";
 import { BsGrid3X3GapFill } from "react-icons/bs";
 import { TfiLayoutGrid4Alt } from "react-icons/tfi";
 import { BsGridFill } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
+
 import {
   FiFilter,
   FiList,
@@ -19,6 +21,8 @@ const shoesData = Array.from({ length: 35 }, (_, i) => ({
 
 const ShoesSection = () => {
   const [layout, setLayout] = useState("grid-4");
+  const navigate = useNavigate();
+
 
   return (
     <section className="shoes-section">
@@ -93,10 +97,10 @@ const ShoesSection = () => {
           {shoesData.map((shoe) => (
             <div className="product-card" key={shoe.id}>
               <div className="product-images">
-                <img src={shoe.image} alt="" />
+                <img src={shoe.image} alt="" onClick={() => navigate("/productDetails")}/>
               </div>
-              <h4>{shoe.name}</h4>
-              <p>{shoe.price}</p>
+              <h4 onClick={() => navigate("/productDetails")}>{shoe.name}</h4>
+              <p onClick={() => navigate("/productDetails")}>{shoe.price}</p>
             </div>
           ))}
         </div>

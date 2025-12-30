@@ -1,40 +1,35 @@
 import React from "react";
 import "./PeopleAlsoBought.css";
-import shoe from '../../../Assets/shoe.png';
+import shoe from "../../../Assets/shoe.png";
+
+const pabProducts = [
+  { id: 1, name: "Derby - 210 BRN", price: "Rs.28,500.00" },
+  { id: 2, name: "Derby - 536P BLU", price: "Rs.28,500.00" },
+  { id: 3, name: "Derby - 536 PT BLK", price: "Rs.28,500.00" },
+  { id: 4, name: "Derby - 210-SOOTI BRN", price: "Rs.28,500.00" },
+];
 
 const PeopleAlsoBought = () => {
   return (
-    <section className="people-section">
-      <h2 className="people-title">PEOPLE ALSO BOUGHT</h2>
-      <p className="people-subtitle">
+    <section className="pab-section">
+      <h2 className="pab-title">PEOPLE ALSO BOUGHT</h2>
+
+      <p className="pab-subtitle">
         Here’s some of our most similar products people are buying. Click to
         discover trending style.
       </p>
 
-      <div className="product-grid">
-        <div className="product-cards">
-          <div className="product-images"><img src={shoe} alt="" /></div>
-          <p className="product-name">Derby - 210 BRN</p>
-          <p className="product-price">Rs.28,500.00</p>
-        </div>
+      <div className="pab-grid">
+        {pabProducts.map((item) => (
+          <div className="pab-card" key={item.id}>
+            <div className="pab-image">
+              <img src={shoe} alt={item.name} />
+            </div>
 
-        <div className="product-cards">
-          <div className="product-images"><img src={shoe} alt="" /></div>
-          <p className="product-name">Derby - 536P BLU</p>
-          <p className="product-price">Rs.28,500.00</p>
-        </div>
-
-        <div className="product-cards">
-          <div className="product-images"><img src={shoe} alt="" /></div>
-          <p className="product-name">Derby - 536 PT BLK</p>
-          <p className="product-price">Rs.28,500.00</p>
-        </div>
-
-        <div className="product-cards">
-          <div className="product-images"><img src={shoe} alt="" /></div>
-          <p className="product-name">Derby - 210-SOOTI BRN</p>
-          <p className="product-price">Rs.28,500.00</p>
-        </div>
+            <p className="pab-name">{item.name}</p>
+            <p className="pab-price">{item.price}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
