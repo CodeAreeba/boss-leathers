@@ -1,58 +1,70 @@
 import React, { useState, useEffect } from "react";
 import "./Categories.css";
+import { useNavigate } from "react-router-dom";
 import image1 from "../../Assets/Image1.png"
 import image2 from "../../Assets/Image2.png"
+import Oxford from "../Oxford/Oxford";
 
 const categories = [
   {
     id: 1,
     title: "BROGUES",
     image: image1,
+    route: "/brogues"
   },
   {
     id: 2,
     title: "WHOLECUT",
     image: image2,
+    route: "/wholecut"
   },
   {
     id: 3,
     title: "BROGUES",
     image: image1,
+    route: "/brogues"
   },
   {
     id: 4,
     title: "OXFORDS",
     image: image2,
+    route: "/oxford"
   },
   {
     id: 5,
     title: "LOAFERS",
     image: image2,
+    route: "/loafers"
   },
   {
     id: 6,
     title: "LOAFERS",
     image: image1,
+    route: "/loafers"
   },
   {
     id: 7,
     title: "LOAFERS",
     image: image2,
+    route: "/loafers"
   },
   {
     id: 8,
     title: "LOAFERS",
     image: image1,
+    route: "/loafers"
   },
   {
     id: 9,
     title: "LOAFERS",
     image: image2,
+    route: "/loafers"
   },
   {
     id: 10,
     title: "LOAFERS",
     image: image1,
+    route: "/loafers"
   }
 ];
 
@@ -60,6 +72,7 @@ const Categories = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(true);
+  const navigate = useNavigate();
 
   // Duplicate categories for infinite loop
   const extendedCategories = [...categories, ...categories, ...categories];
@@ -110,6 +123,10 @@ const Categories = () => {
     setIsPaused(false);
   };
 
+  const handleCategoryClick = (category) => {
+    navigate(category.route);
+  };
+
   const getTranslateValue = () => {
     // Each card width + gap
     const cardWidth = 453.33; // (1400 / 3)
@@ -133,7 +150,11 @@ const Categories = () => {
           }}
         >
           {extendedCategories.map((category, index) => (
-            <div key={`${category.id}-${index}`} className="category-card">
+            <div 
+              key={`${category.id}-${index}`} 
+              className="category-card"
+              onClick={() => handleCategoryClick(category)}
+            >
               <div className="category-image">
                 <img src={category.image} alt={category.title} />
               </div>

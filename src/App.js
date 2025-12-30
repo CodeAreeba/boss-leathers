@@ -10,6 +10,8 @@ import ShippingPolicyPage from './Pages/ShippingPolicy/ShippingPolicyPage';
 import CartPage from './Pages/Cart/CartPage';
 import CheckoutPage from './Pages/Checkout/CheckoutPage';
 import Cart from "./Components/CartItems/CartItems";
+import Sidebar from './Components/Sidebar/Sidebar';
+import Oxford from './Components/Oxford/Oxford';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/empty-cart" element={<CartPage />} />
           <Route path="/checkout-page" element={<CheckoutPage />} />
           <Route path="/cart-items" element={<Cart />} />
+          <Route path="/sidebar" element={<Sidebar />} />
+          <Route path="/oxford" element={<Oxford />} />
 
           
         </Route>
