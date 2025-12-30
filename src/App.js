@@ -1,6 +1,5 @@
  
 import './App.css';
-<<<<<<< Updated upstream
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from './MainLayout/MainLayout';
 import Home from './Pages/Home/Home';
@@ -11,18 +10,10 @@ import ShippingPolicyPage from './Pages/ShippingPolicy/ShippingPolicyPage';
 import CartPage from './Pages/Cart/CartPage';
 import CheckoutPage from './Pages/Checkout/CheckoutPage';
 import Cart from "./Components/CartItems/CartItems";
-=======
-import Footer from './Footer/Footer';
-import NavBar from './Components/NavBar/NavBar';
-import CardsSection from './Components/CardsSection/CardsSection';
-import Sidebar from './Sidebar/Sidebar';
-import SearchOverlay from './Components/SearchOverlay/SearchOverlay';
->>>>>>> Stashed changes
 
 function App() {
   return (
     <div className="App">
-<<<<<<< Updated upstream
       <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
@@ -39,13 +30,6 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-=======
-      <NavBar />
-      
-      <CardsSection />
-      <Footer />
-      
->>>>>>> Stashed changes
        
     </div>
   );
