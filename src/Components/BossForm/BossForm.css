@@ -1,0 +1,76 @@
+/* Page split */
+.page {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+ 
+.right {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between product boxes */
+}
+
+/* Table */
+.cart-table {
+  width: 100%;
+  height: 161px;
+  border-collapse: separate;   
+  border-spacing: 0;        
+  border: 1px solid var(--search-color);     
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 15px;
+  border: 1px solid #ddd;     /* thin uniform borders */
+}
+
+.cart-table thead th {
+  background: #fff;           /* optional */
+}
+ 
+/* Product column */
+.product {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.product img {
+  width: 90px; /* same as before */
+}
+
+.name {
+  font-weight: 600;
+}
+
+.size {
+  font-size: 13px;
+  color: #777;
+}
+
+.price {
+  font-size: 14px;
+}
+
+/* Quantity box */
+.qty {
+  display: inline-flex;
+  background: #f3f3f3;
+  border-radius: 6px;
+}
+
+.qty span {
+  padding: 6px 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Center text */
+.center {
+  text-align: center;
+}
