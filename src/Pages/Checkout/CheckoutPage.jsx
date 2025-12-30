@@ -1,7 +1,7 @@
 import React from 'react';
 import './CheckoutPage.css';
 import CheckoutForm from '../../Components/CheckoutForm/CheckoutForm';
-import CartTable from '../../Components/CheckoutForm/CartTable';
+import BossForm from '../../Components/BossForm/BossForm';
 
 const CheckoutPage = () => {
   return (
@@ -12,9 +12,9 @@ const CheckoutPage = () => {
         </div>
         
         <div className="checkout-right">
-          {/* <CartTable /> */}
-        </div>
+          <BossForm />
       </div>
+    </div>
     </div>
   );
 };
