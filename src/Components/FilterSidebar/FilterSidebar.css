@@ -1,0 +1,182 @@
+.filter {
+  width: 320px;
+  height: 100vh;
+  background: #f8f8f8;
+  padding: 0;
+  overflow-y: auto;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.filter__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.filter__header h2 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 0;
+  color: #000;
+}
+
+.filter__header svg {
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+}
+
+.filter section {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0;
+}
+
+.filter__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  color: #000;
+  transition: background-color 0.2s ease;
+}
+
+.filter__title:hover {
+  background-color: #fafafa;
+}
+
+.filter__title svg {
+  font-size: 18px;
+  color: #000;
+}
+
+.filter__content {
+  padding: 0 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter__content label {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.filter__content label:hover {
+  color: #000;
+}
+
+.filter__content input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #000;
+  border: 1px solid #ccc;
+}
+
+.filter__price {
+  padding: 0 40px 20px 40px;
+}
+
+.filter__price-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.filter__price-slider {
+  position: relative;
+  height: 18px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.filter__price input[type="range"] {
+  position: absolute;
+  width: 100%;
+  height: 18px;
+  appearance: none;
+  background: transparent;
+  pointer-events: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+.filter__price input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.2s ease;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  margin-top: -7.5px;
+}
+
+.filter__price input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.filter__price input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.filter__price input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* Track styling */
+.filter__price input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+}
+
+.filter__price input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+}
+
+/* Ensure the max range slider is on top */
+.filter__price input[type="range"].range-max {
+  z-index: 2;
+}
+
+.filter__price input[type="range"].range-min {
+  z-index: 1;
+}

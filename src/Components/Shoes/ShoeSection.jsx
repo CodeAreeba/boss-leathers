@@ -4,6 +4,7 @@ import { BsGrid3X3GapFill } from "react-icons/bs";
 import { TfiLayoutGrid4Alt } from "react-icons/tfi";
 import { BsGridFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import FilterSidebar from "../FilterSidebar/FilterSidebar";
 
 import {
   FiFilter,
@@ -21,7 +22,26 @@ const shoesData = Array.from({ length: 35 }, (_, i) => ({
 
 const ShoesSection = () => {
   const [layout, setLayout] = useState("grid-4");
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [filters, setFilters] = useState({
+    gender: [],
+    discount: [],
+    type: [],
+    size: [],
+    price: [0, 12950],
+    color: [],
+  });
   const navigate = useNavigate();
+
+  const handleFilterChange = (newFilters) => {
+    setFilters(newFilters);
+
+    console.log("Filters updated:", newFilters);
+  };
+
+  const handleFilterClose = () => {
+    setIsFilterOpen(false);
+  };
 
 
   return (
@@ -33,7 +53,7 @@ const ShoesSection = () => {
 
           {/* LEFT */}
           <div className="toolbar__left">
-            <button className="filter-btn">
+            <button className="filter-btn" onClick={() => setIsFilterOpen(true)}>
               <FiFilter /> FILTER
             </button>
             <span className="result-count">
@@ -106,6 +126,19 @@ const ShoesSection = () => {
         </div>
 
       </div>
+
+      {/* ===== FILTER SIDEBAR ===== */}
+      {isFilterOpen && (
+        <>
+          <div className="filter-overlay" onClick={handleFilterClose}></div>
+          <div className="filter-sidebar-wrapper">
+            <FilterSidebar 
+              onFilterChange={handleFilterChange}
+              onClose={handleFilterClose}
+            />
+          </div>
+        </>
+      )}
     </section>
   );
 };
