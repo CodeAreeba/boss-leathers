@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ShoeSection.css";
 import { BsGrid3X3GapFill } from "react-icons/bs";
 import { TfiLayoutGrid4Alt } from "react-icons/tfi";
 import { BsGridFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import FilterSidebar from "../FilterSidebar/FilterSidebar";
+import ShoeCard from "../Common/ShoeCard/ShoeCard";
 
 import {
   FiFilter,
@@ -33,6 +34,22 @@ const ShoesSection = () => {
   });
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setLayout("grid-2");
+      } else {
+        setLayout("grid-4");
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const handleFilterChange = (newFilters) => {
     setFilters(newFilters);
 
@@ -47,16 +64,14 @@ const ShoesSection = () => {
   return (
     <section className="shoes-section">
       <div className="shoes-section__container">
-
-        {/* ===== MERGED TOOLBAR + SIDEBAR ===== */}
+ 
         <div className="toolbar">
 
-          {/* LEFT */}
           <div className="toolbar__left">
             <button className="filter-btn" onClick={() => setIsFilterOpen(true)}>
               <FiFilter /> FILTER
             </button>
-            <span className="result-count">
+            <span className="result-count hide-on-mobile">
               There are {shoesData.length} results in total
             </span>
           </div>
@@ -73,14 +88,14 @@ const ShoesSection = () => {
                 <BsGridFill />
               </button>
               <button
-                className={layout === "grid-3" ? "active" : ""}
+                className={`${layout === "grid-3" ? "active" : ""} hide-on-mobile`}
                 onClick={() => setLayout("grid-3")}
               >
                 <BsGrid3X3GapFill />
               </button>
 
               <button
-                className={layout === "grid-4" ? "active" : ""}
+                className={`${layout === "grid-4" ? "active" : ""} hide-on-mobile`}
                 onClick={() => setLayout("grid-4")}
               >
                 <TfiLayoutGrid4Alt />
@@ -115,13 +130,11 @@ const ShoesSection = () => {
         {/* ===== PRODUCTS ===== */}
         <div className={`products ${layout}`}>
           {shoesData.map((shoe) => (
-            <div className="product-card" key={shoe.id}>
-              <div className="product-images">
-                <img src={shoe.image} alt="" onClick={() => navigate("/productDetails")}/>
-              </div>
-              <h4 onClick={() => navigate("/productDetails")}>{shoe.name}</h4>
-              <p onClick={() => navigate("/productDetails")}>{shoe.price}</p>
-            </div>
+            <ShoeCard 
+              key={shoe.id} 
+              shoe={shoe} 
+              onCardClick={() => navigate("/productDetails")} 
+            />
           ))}
         </div>
 

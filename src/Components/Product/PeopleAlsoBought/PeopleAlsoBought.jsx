@@ -1,12 +1,13 @@
 import React from "react";
 import "./PeopleAlsoBought.css";
 import shoe from "../../../Assets/shoe.png";
+import ShoeCard from "../../Common/ShoeCard/ShoeCard";
 
 const pabProducts = [
-  { id: 1, name: "Derby - 210 BRN", price: "Rs.28,500.00" },
-  { id: 2, name: "Derby - 536P BLU", price: "Rs.28,500.00" },
-  { id: 3, name: "Derby - 536 PT BLK", price: "Rs.28,500.00" },
-  { id: 4, name: "Derby - 210-SOOTI BRN", price: "Rs.28,500.00" },
+  { id: 1, name: "Derby - 210 BRN", price: "Rs.28,500.00", image: shoe },
+  { id: 2, name: "Derby - 536P BLU", price: "Rs.28,500.00", image: shoe },
+  { id: 3, name: "Derby - 536 PT BLK", price: "Rs.28,500.00", image: shoe },
+  { id: 4, name: "Derby - 210-SOOTI BRN", price: "Rs.28,500.00", image: shoe },
 ];
 
 const PeopleAlsoBought = () => {
@@ -21,14 +22,10 @@ const PeopleAlsoBought = () => {
 
       <div className="pab-grid">
         {pabProducts.map((item) => (
-          <div className="pab-card" key={item.id}>
-            <div className="pab-image">
-              <img src={shoe} alt={item.name} />
-            </div>
-
-            <p className="pab-name">{item.name}</p>
-            <p className="pab-price">{item.price}</p>
-          </div>
+          <ShoeCard 
+            key={item.id} 
+            shoe={item} 
+          />
         ))}
       </div>
     </section>

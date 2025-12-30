@@ -1,8 +1,9 @@
 import React from "react";
 import "./SearchOverlay.css";
 import { FiSearch } from "react-icons/fi";
- import shoe from '../../Assets/shoe.png';
- import close from '../../Assets/close.png';
+import shoe from '../../Assets/shoe.png';
+import close from '../../Assets/close.png';
+import ShoeCard from "../Common/ShoeCard/ShoeCard";
 
 const searchData = [
   {
@@ -70,11 +71,10 @@ const SearchOverlay = ({ onClose }) => {
 
         <div className="products-grid">
           {searchData.map((item) => (
-            <div className="product-card" key={item.id}>
-              <img src={item.image} alt={item.name} />
-              <p className="product-name">{item.name}</p>
-              <p className="product-price">{item.price}</p>
-            </div>
+            <ShoeCard 
+              key={item.id} 
+              shoe={item} 
+            />
           ))}
         </div>
 
