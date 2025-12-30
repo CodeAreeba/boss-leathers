@@ -41,21 +41,21 @@
   border-radius: 20px;
   border: 1px solid var(--secondary-color);
   outline: none;
-  background: var(--text-color2);
+  background: #fff;
   cursor: pointer;
   text-align: left;
-  color: var(--search-color);
+  color: #999;
   font-size: 14px;
   font-family: "Segoe UI", sans-serif;
   transition: border-color 0.2s ease;
 }
 
 .navbar .navbar-top .navbar-top-right button:hover {
-  border-color: var(--secondary-color);
+  border-color: #333;
 }
 
 .navbar .navbar-top .navbar-top-right button span{
-    color: var(--secondary-color);
+    color: black;
     margin-right: 10px;
 }
  
