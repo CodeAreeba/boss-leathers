@@ -1,0 +1,104 @@
+/* Category Banner Component Styles */
+
+.category-banner {
+  width: 100%;
+  height: 129px;
+  background: #9D6748;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-banner__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.category-banner__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.category-banner__title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.category-banner__title--dark {
+  color: #000000;
+  font-weight: 300;
+}
+
+.category-banner__title--light {
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .category-banner__container {
+    padding: 0 30px;
+  }
+
+  .category-banner__title {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 992px) {
+  .category-banner__container {
+    padding: 0 20px;
+  }
+
+  .category-banner__title {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-banner {
+    height: 123px;
+  }
+
+  .category-banner__container {
+    padding: 0 15px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .category-banner__item:not(:first-child) {
+    display: none;
+  }
+
+  .category-banner__item::after {
+    display: none;
+  }
+
+  .category-banner__title {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-banner__title {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+}
