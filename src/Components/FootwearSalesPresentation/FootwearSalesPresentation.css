@@ -1,0 +1,162 @@
+.footwear-presentation-container {
+  font-family: 'Inter', sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 40px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.presentation-content {
+  flex: 0 0 45%;
+  z-index: 2;
+  padding-left: 50px;
+}
+
+.military-choice-pill {
+  background-color: #3e2b22;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+.brand-name {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.main-title {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+  color: #000;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.presentation-visuals {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+}
+
+/* Light beige shape - Top/Back */
+.background-shape-top {
+  position: absolute;
+  top: 35%;
+  right: -100px;
+  width: 700px;
+  height: 65px;
+  background-color: #dfc5b8;
+  border-radius: 50px;
+  z-index: 1;
+}
+/* Darker brown shape - Bottom/Front */
+.background-shape-bottom {
+  position: absolute;
+  top: 50%;
+  right: -150px;
+  width: 800px;
+  height: 140px;
+  background-color: #c16e41;
+  border-radius: 90px;
+  z-index: 1;
+}
+
+.shoe-image {
+  position: relative;
+  z-index: 3;
+  width: 600px;
+  max-width: none;
+  height: auto;
+  margin-right: -30px;
+  margin-bottom: 150px;
+}
+
+.star-icon {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  color: #5c4033;
+  font-size: 28px;
+  z-index: 4;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .main-title {
+    font-size: 3rem;
+  }
+  
+  .shoe-image {
+    width: 380px;
+    right: 10%;
+  }
+  
+  .background-shape-top {
+    width: 400px;
+    right: 8%;
+  }
+  
+  .background-shape-bottom {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footwear-presentation-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .presentation-content {
+    max-width: 100%;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .main-title {
+    font-size: 2.5rem;
+  }
+  
+  .presentation-visuals {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .shoe-image {
+    width: 300px;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  
+  .background-shape-top {
+    width: 280px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
+  .background-shape-bottom {
+    width: 350px;
+    border-radius: 150px;
+  }
+}

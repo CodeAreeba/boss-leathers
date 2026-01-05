@@ -29,8 +29,6 @@ function App() {
           <Route path="/cart-items" element={<Cart />} />
           <Route path="/sidebar" element={<Sidebar />} />
           <Route path="/oxford" element={<Oxford />} />
-
-          
         </Route>
       </Routes>
     </BrowserRouter>
